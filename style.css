@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Karla", sans-serif;
+  background: #98a6bd; }
+
+.main-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "top-box top-box" "bottom-left-box bottom-right-box";
+  letter-spacing: 1px;
+  height: 80vh;
+  width: 50vw;
+  margin: 10vh auto; }
+
+.top-box {
+  grid-area: top-box;
+  padding: 50px;
+  border-radius: 25px 25px 0 0;
+  background: #ffffff; }
+  .top-box h1 {
+    font-size: 36px;
+    margin: 0 0 25px 0;
+    color: #2ab2af; }
+  .top-box h2 {
+    font-size: 32px;
+    color: #c0df34; }
+  .top-box p {
+    font-size: 20px;
+    margin: 30px 0 0 0;
+    color: #d0d9dd; }
+
+.bottom-left-box {
+  padding: 25px 50px;
+  grid-area: bottom-left-box;
+  background: #289f9b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 0 0 0 25px; }
+  .bottom-left-box h1 {
+    margin: 0 0 25px 0; }
+  .bottom-left-box h2 {
+    font-size: 36px; }
+  .bottom-left-box p {
+    margin: 15px 0 35px 0; }
+  .bottom-left-box .sign-up {
+    width: 95%;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    height: 75px;
+    color: white;
+    background: #c0df34;
+    font-size: 24px;
+    font-weight: 600;
+    box-shadow: 1px 5px 10px #5a5a5a;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.4s; }
+  .bottom-left-box .sign-up:hover {
+    background: #57cbc8;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.1, 1.1); }
+
+.bottom-right-box {
+  grid-area: bottom-right-box;
+  padding: 25px 50px;
+  background: #57cbc8;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 0 0 25px 0; }
+  .bottom-right-box h1 {
+    margin: 0 0 25px 0; }
+  .bottom-right-box ul {
+    list-style-type: none; }
+  .bottom-right-box li {
+    margin-bottom: 5px; }
+
+@media screen and (max-width: 1024px) {
+  .main-section {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "top-box" "bottom-left-box" "bottom-right-box";
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    height: 100vh; }
+  .top-box {
+    padding: 30px 30px;
+    border-radius: 0; }
+    .top-box h1 {
+      font-size: 22px; }
+    .top-box h2 {
+      font-size: 16px; }
+    .top-box p {
+      font-size: 16px;
+      line-height: 28px; }
+  .bottom-left-box {
+    padding: 30px 30px;
+    border-radius: 0; }
+    .bottom-left-box h1 {
+      font-size: 20px; }
+    .bottom-left-box p {
+      font-size: 16px; }
+    .bottom-left-box .sign-up {
+      width: 100%;
+      margin: 0; }
+  .bottom-right-box {
+    padding: 30px 30px;
+    border-radius: 0; } }
